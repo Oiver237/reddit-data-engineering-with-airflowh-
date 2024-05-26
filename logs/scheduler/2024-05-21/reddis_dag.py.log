@@ -1,0 +1,53 @@
+[2024-05-21T20:45:11.209+0000] {processor.py:161} INFO - Started process (PID=27) to work on /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:11.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddis_dag.py for tasks to queue
+[2024-05-21T20:45:11.371+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:11.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:11.547+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:11.524+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/reddis_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddis_dag.py", line 8
+    from pipelines
+                  ^
+SyntaxError: invalid syntax
+[2024-05-21T20:45:11.557+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:12.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddis_dag.py took 1.535 seconds
+[2024-05-21T20:45:23.166+0000] {processor.py:161} INFO - Started process (PID=28) to work on /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:23.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddis_dag.py for tasks to queue
+[2024-05-21T20:45:23.188+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:23.187+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:23.203+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:23.198+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/reddis_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddis_dag.py", line 8
+    from pipelines.reddit
+                         ^
+SyntaxError: invalid syntax
+[2024-05-21T20:45:23.209+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:23.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddis_dag.py took 0.272 seconds
+[2024-05-21T20:45:26.586+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:26.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddis_dag.py for tasks to queue
+[2024-05-21T20:45:26.620+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:26.619+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:26.736+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:26.733+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/reddis_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddis_dag.py", line 7, in <module>
+    from pipelines.aws_s3_pipeline import aws_s3_pipeline
+ModuleNotFoundError: No module named 'pipelines.aws_s3_pipeline'
+[2024-05-21T20:45:26.739+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:26.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddis_dag.py took 0.343 seconds
+[2024-05-21T20:45:29.640+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:29.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddis_dag.py for tasks to queue
+[2024-05-21T20:45:29.663+0000] {logging_mixin.py:188} INFO - [2024-05-21T20:45:29.661+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:29.678+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddis_dag.py
+[2024-05-21T20:45:29.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddis_dag.py took 0.183 seconds

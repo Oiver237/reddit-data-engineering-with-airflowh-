@@ -1,0 +1,21 @@
+[2024-05-23T14:40:54.571+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-23T14:40:54.600+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-05-23T14:40:52.556648+00:00 [queued]>
+[2024-05-23T14:40:54.609+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-05-23T14:40:52.556648+00:00 [queued]>
+[2024-05-23T14:40:54.609+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-23T14:40:54.624+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-05-23 14:40:52.556648+00:00
+[2024-05-23T14:40:54.630+0000] {standard_task_runner.py:63} INFO - Started process 50 to run task
+[2024-05-23T14:40:54.635+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'reddit_extraction', 'manual__2024-05-23T14:40:52.556648+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp816y1589']
+[2024-05-23T14:40:54.638+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask reddit_extraction
+[2024-05-23T14:40:54.698+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-05-23T14:40:52.556648+00:00 [running]> on host f174faf60ef4
+[2024-05-23T14:40:54.804+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='OlivierAssiene' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-05-23T14:40:52.556648+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-23T14:40:52.556648+00:00'
+[2024-05-23T14:40:54.805+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-23T14:40:54.822+0000] {logging_mixin.py:188} INFO - Required configuration setting 'client_secret' missing. 
+This setting can be provided in a praw.ini file, as a keyword argument to the Reddit class constructor, or as an environment variable.
+For installed applications this value must be set to None via a keyword argument to the Reddit class constructor.
+[2024-05-23T14:40:54.823+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-23T14:40:54.823+0000] {taskinstance.py:2907} ERROR - Task failed due to SystemExit(1)
+[2024-05-23T14:40:54.836+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=etl_reddit_pipeline, task_id=reddit_extraction, run_id=manual__2024-05-23T14:40:52.556648+00:00, execution_date=20240523T144052, start_date=20240523T144054, end_date=20240523T144054
+[2024-05-23T14:40:54.851+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3 for task reddit_extraction (Task failed due to SystemExit(1); 50)
+[2024-05-23T14:40:54.889+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-23T14:40:54.911+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-23T14:40:54.914+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
